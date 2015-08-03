@@ -1,0 +1,485 @@
+html,
+body {
+    height: 100%;
+    background-color: #FF4E50;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.wrapper {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color: #EDE574;
+    height: 100%;
+}
+
+.header {
+    height: 18em;
+    background-color: #FF4E50;
+}
+
+#contact {
+    box-sizing: border-box;
+    color: #EDE574;
+    text-decoration: none;
+    position: absolute;
+    top: 1em;
+    right: calc(50% - 2.96em);
+    font-size: 1.75em;
+    border: .125em solid;
+    border-radius: 35px;
+    padding: 0 .45em;
+}
+
+.social-div {
+    display: none;
+    position: absolute;
+}
+
+.page {
+    min-height: calc(100% - 18em);
+}
+
+.main {
+    background-color: #FF4E50;
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em .25em 1em;
+    box-sizing: border-box;
+}
+
+.title {
+    padding: 6em 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.85em;
+    text-shadow: -.04em .04em 0px #FC913A;
+    letter-spacing: .05em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-shadow: -.04em .04em 0px #FC913A;
+    letter-spacing: .05em;
+}
+
+.main h1 {
+    font-size: 2.65em;
+    margin: .5em 0;
+    color: #FC913A;
+    text-shadow: -2px 2px 1px #E1F5C4;
+}
+
+.circle-btn,
+.circle-btn .btn-ring,
+.oval-btn {
+    transition: all .45s;
+}
+
+.page-about .main,
+.page-resume .main,
+.page-portfolio .main {
+    background-color: #EDE574;
+    color: #FF4E50;
+}
+
+#portfolio {
+    margin: 1em auto;
+}
+
+.circle-btn {
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 10em;
+    width: 10em;
+    border: solid 5px;
+    border-radius: 50%;
+}
+
+.page-home .main a {
+    text-decoration: none;
+    background-color: #FF4E50;
+    color: #EDE574;
+}
+
+.main a {
+    background-color: #EDE574;
+    color: #FF4E50;
+}
+
+.page-home .circle-btn:hover {
+    background-color: #EDE574;
+    color: #FF4E50;
+    transform: scale(1.05);
+}
+
+.circle-btn:hover {
+    background-color: #FF4E50;
+    color: #EDE574;
+    transform: scale(1.05);
+}
+
+.circle-btn .btn-ring {
+    width: 99%;
+    height: 99%;
+    border: 0px solid;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+}
+
+.circle-btn .btn-ring:hover {
+    transform: scale(1.2);
+    border: 7px solid;
+    opacity: 0;
+    left: -5px;
+    top: -5px;
+}
+
+.circle-btn span {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 3.75rem;
+    display: inline-block;
+    font-size: 33px;
+}
+
+.oval-btn {
+    font-family: 'Raleway', sans-serif;
+    color: #EDE574;
+    text-decoration: none;
+    font-size: 1.75em;
+    border: .125em solid;
+    border-radius: 35px;
+    padding: 0 .45em;
+}
+
+.oval-btn:hover {
+    background-color: #FF4E50;
+    color: #EDE574;
+    border: #FF4E50 .125em solid;
+}
+
+.page-resume .main {
+    padding-top: 3em;
+}
+
+#contact:hover {
+    background-color: #EDE574;
+    color: #FF4E50;
+    border: #EDE574 .125em solid;
+}
+
+.about-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-info p {
+    width: 90%;
+    font-size: 1.05em;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.about-info img {
+    display: none;
+}
+
+.page-resume h1 {
+    margin-bottom: .5em;
+}
+
+.page-resume h2 {
+    margin: .35em auto;
+    font-size: 2.25em;
+    width: 90%;
+}
+
+.page-resume h3 {
+    margin: .25em auto;
+    font-size: 1.75em;
+    width: 90%;
+}
+
+.page-resume p {
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.page-resume li {
+    text-align: left;
+    font-size: 1.5em;
+    width: 90%;
+    margin: .25em auto;
+}
+
+.gallery {
+    margin: auto;
+    width: 80%;
+}
+
+.project {
+    vertical-align: top;
+    display: inline-block;
+    width: 90%;
+    margin: 1em;
+    margin: auto;
+}
+
+.project h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.05em;
+    font-weight: 700;
+    margin-bottom: .25em;
+}
+
+.project img {
+    box-sizing: border-box;
+    width: 12em;
+    height: 12em;
+    border: 4px solid #FF4E50;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.project p {
+    width: 100%;
+    margin: 1em auto;
+    font-size: 1.25em;
+}
+
+hr {
+    margin-top: 1.5em;
+    width: 90%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 78, 80, 0), rgba(255, 78, 80, 0.75), rgba(255, 78, 80, 0));
+}
+
+.go-back {
+    margin-top: 1em;
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.ng-enter {
+    animation: slideInRight 0.15s both ease-in;
+    animation-delay: .16s;
+}
+
+.ng-leave {
+    animation: slideOutRight 0.15s both ease-in;
+}
+
+.page-home.ng-enter {
+    animation: slideInLeft 0.15s both ease-in;
+    animation-delay: .16s;
+}
+
+.page-home.ng-leave {
+    animation: slideOutLeft 0.15s both ease-in;
+}
+
+@media only screen and (min-width: 320px) {
+    .header h1 {
+        font-size: 3.4em;
+    }
+    .header h2 {
+        font-size: 1.85em;
+    }
+    .about-info p {
+        font-size: 1.25em;
+    }
+    .project h2 {
+        font-size: 2.5em;
+    }
+    .project img {
+        width: 100%;
+        max-width: 19em;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .header {
+        height: 22em;
+    }
+    .page {
+        min-height: calc(100% - 23em);
+    }
+    .header h1 {
+        font-size: 4.4em;
+    }
+    .header h2 {
+        font-size: 2.3em;
+    }
+    .about-info p {
+        font-size: 1.5em;
+        width: 85%;
+    }
+    .project img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .about-info img {
+        display: block;
+        width: 10em;
+        box-sizing: border-box;
+        box-shadow: -1px 1px 7px 4px #FC913A;
+        border: 7px solid;
+        border-radius: 50%;
+        margin: 0 auto 1em;
+    }
+    #contact {
+        top: 1em;
+        right: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .social-div {
+        font-size: 2.2em;
+        display: inline-block;
+        left: 1em;
+        top: .8em;
+        line-height: 1em;
+    }
+    .social-div a {
+        text-decoration: none;
+        color: #EDE574;
+        margin: 0 .15em;
+    }
+    .social-div a:hover {
+        color: #F7F4C7;
+    }
+    .project img {
+        -webkit-filter: blur(1px);
+        transition: all .5s;
+    }
+    .project img:hover {
+        -webkit-filter: blur(0px);
+    }
+    .header {
+        height: 26em;
+    }
+    .page {
+        min-height: calc(100% - 26em);
+    }
+    .header h1 {
+        font-size: 7em;
+    }
+    .header h2 {
+        font-size: 3em;
+    }
+    #portfolio {
+        margin: auto 3em;
+    }
+    .circle-btn {
+        display: inline-block;
+    }
+    .page-resume .main {
+        padding-top: 2em;
+    }
+    .about-info p {
+        width: 80%;
+        font-size: 1.65em;
+    }
+    .about-info img {
+        width: 13em;
+    }
+    .project,
+    .page-resume p,
+    .gallery {
+        width: 80%;
+    }
+    .page-resume li {
+        width: 70%;
+    }
+    .project h2 {
+        font-size: 2.75em;
+    }
+    .project p {
+        font-size: 1.67em;
+    }
+    hr {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-info p {
+        width: 75%;
+    }
+    .about-info img {
+        width: 15em;
+        float: right;
+        box-shadow: -1px 1px 7px 4px #FC913A;
+        border: 7px solid;
+        border-radius: 50%;
+        margin: 0 0 .5em .7em;
+    }
+    .page-resume p {
+        width: 70%;
+    }
+    .page-resume li {
+        text-align: left;
+        font-size: 1.5em;
+        width: 60%;
+    }
+    .project {
+        width: 23em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .skills {
+        width: 75%;
+        margin: auto;
+        margin-left: 15%;
+    }
+}
